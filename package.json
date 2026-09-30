@@ -1,0 +1,23 @@
+{
+  "name": "recuperacion-backend-verificacion",
+  "version": "2.0.0",
+  "description": "API REST de usuarios con MongoDB y Cloudinary",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/controllers/register.controller.js && node --check src/controllers/login.controller.js && node --check src/controllers/user.controller.js && node --check src/services/email.service.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^8.0.5"
+  }
+}
